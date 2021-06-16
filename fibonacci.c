@@ -1,18 +1,20 @@
-#include <stdio.h>
- 
-int fib(int n)
-{
-    if (n <= 1)
-        return n;
-    return fib(n-1) + fib(n-2);
-}
- 
-int main ()
-{
-    int n=0;
-    printf("Enter the number of terms you want in the fibonacci series: ");
-    scanf("%d", &n);
-    printf("\nThe factorial is: %d", fib(n));
-    printf("\n");
+#include<stdio.h>    
+void Fibonacci(int n){    
+    int n1=0,n2=1,n3;    
+    if(n>0){    
+         n3 = n1 + n2;    
+         n1 = n2;    
+         n2 = n3;    
+         printf("%d ",n3);    
+         Fibonacci(n-1);    
+    }    
+}    
+int main(){    
+    int n;    
+    printf("Enter the number of elements: ");    
+    scanf("%d",&n);    
+    printf("Fibonacci Series: ");    
+    printf("%d %d ",0,1);    
+    Fibonacci(n-2);
     return 0;
-}
+ }    
