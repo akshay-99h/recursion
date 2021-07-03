@@ -1,6 +1,6 @@
 #include<stdio.h>    
 
-static int n1=0,n2=1,n3;
+int n1=0,n2=1,n3;
 
 void Fibonacci(int n)
 {        
@@ -12,7 +12,7 @@ void Fibonacci(int n)
          printf("%d ",n3);    
          Fibonacci(n-1);    
     }    
-}    
+}   
 int main()
 {    
     int n;    
